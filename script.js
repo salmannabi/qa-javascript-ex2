@@ -24,3 +24,15 @@ function fizzOrBuzzCheck(i) {
 function buzzCheck(i) {
     i % 5 == 0 ? console.log("Buzz") : console.log(i);
 }
+
+// Excercise Scope
+function doSomething() {
+    // console.log(a);
+    console.log(foo());
+    let a = 1;
+    function foo() {
+      return 2;
+    }
+}
+doSomething();
+
